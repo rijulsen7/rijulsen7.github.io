@@ -1,50 +1,225 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
-  <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
-  <link rel="apple-touch-icon" sizes="180x180" href="src/img/favicon_io/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="src/img/favicon_io/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="src/img/favicon_io/favicon-16x16.png">
-  <link rel="manifest" href="src/img/favicon_io/site.webmanifest">
-  <title>My Gallery</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="apple-touch-icon" sizes="180x180" href="src/favicon_io/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="src/favicon_io/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="src/favicon_io/favicon-16x16.png" />
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.2/dist/flowbite.min.css" />
+    <link rel="manifest" href="src/favicon_io/site.webmanifest" />
+    <title>About me</title>
 </head>
+
 <body>
-   <section class="text-gray-600 body-font">
-                        <div class="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                            <div
-                                class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-center md:text-center mb-16 md:mb-0 items-center text-center">
-                                <h1 class="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">About me
-                                    <br class="hidden lg:inline-block mt-px"><p>i am a <span class="typing-text"></span></p>
-                                </h1>
-                                <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-                                    <img class="object-cover object-center rounded mb-10 mt-10" alt="hero"
-                                        src="src/com/DSC_0205-01.jpeg">
-                                </div>
-                                <p class="mb-8 leading-relaxed">They say that nothing worth doing is easy.
-                                    Like every one of us, I’ve had my bumps in the road.
-                                    But if you ask me, I’ll always tell you that I wouldn’t change a thing.
-                                    Why? Because throughout my journey I’ve honed my skills and proven that my services
-                                    get results in the real world. So today, you can benefit from my years of
-                                    experience.
-                                </p>
-                                
-                                <div class="flex justify-center">
-                                    <a href="index.html">
-                                        <button
-                                            class="inline-flex text-white bg-blue-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">Home</button>
-                                    </a>
-                                    <a href="gallery.html">
-                                        <button
-                                            class="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Gallery</button>
-                                    </a>
-                                </div>
+    <!-- pre loader -->
+    <div class="loader-container">
+        <img draggable="false" src="src/pre-loader/Pulse-1s-200px.gif" alt="" />
+    </div>
+    <div class="min-h-screen min-w-full bg-gray-100 flex flex-col justify-center p-10">
+        <div class="relative w-full max-w-full lg:max-w-6xl xl:max-w-screen-2xl mx-auto">
+            <div
+                class="absolute inset-0 -mr-3.5 bg-gradient-to-r from-red-100 to-purple-500 shadow-lg transform -skew-y-6 sm:skew-y-0 sm:rotate-3 sm:rounded-3xl">
+            </div>
+            <div class="relative bg-white shadow-lg sm:rounded-3xl">
+                <div class="flex items-center justify-start pt-6 pl-6">
+                    <span class="w-3 h-3 bg-red-400 rounded-full mr-2"></span>
+                    <span class="w-3 h-3 bg-yellow-400 rounded-full mr-2"></span>
+                    <span class="w-3 h-3 bg-blue-400 rounded-full mr-2"></span>
+                </div>
+
+                <div class="px-50 py-10">
+                    <!-- nav -->
+
+                    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded dark:bg-gray-900">
+                        <div class="container flex flex-wrap justify-between items-center mx-auto">
+                            <a href="https://rijulsen.me/" class="flex items-center">
+                                <svg class="w-10 h-10 mr-1 text-blue-700" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z">
+                                    </path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9.879 16.121A3 3 0 1012.015 11L11 14H9c0 .768.293 1.536.879 2.121z"></path>
+                                </svg>
+                                <span class="self-center text-xl font-semibold whitespace-nowrap dark:text-white">Rijul
+                                    Sen</span>
+                            </a>
+                            <button data-collapse-toggle="navbar-default" type="button"
+                                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                                aria-controls="navbar-default" aria-expanded="false">
+                                <span class="sr-only">Open main menu</span>
+                                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                                        clip-rule="evenodd"></path>
+                                </svg>
+                            </button>
+                            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                                <ul
+                                    class="flex flex-col p-4 mt-4 bg-gray-50 rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                                    <li>
+                                        <a href="index.html#hero"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Home
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="gallery.html"
+                                            class="block py-2 pr-4 pl-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-white">Gallery</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About
+                                            me</a>
+                                    </li>
+                                    <li>
+                                        <a href="blogs"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Blogs</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html"
+                                            class="block py-2 pr-4 pl-3 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact
+                                            me</a>
+                                    </li>
+                                </ul>
                             </div>
-                            
                         </div>
-                    </section>
+                    </nav>
+                    <!-- /nav -->
+
+
+                    <!--Gallery-->
+                    <section class="text-gray-600 body-font">
+                        <div class="container px-5 py-24 mx-auto">
+                          <div class="flex flex-col text-center w-full mb-20">
+                            <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Gallery</h1>
+                            <p class="lg:w-2/3 mx-auto leading-relaxed text-base">History is a gallery of pictures in which there are few originals and many copies.</p>
+                          </div>
+                          <div class="flex flex-wrap -m-4">
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                              <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="src/com/DSC_0112-01.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                  <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">Narrowly escaped</h2>
+                                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Moral of the Story Don't Run in Mountain Area</h1>
+                                  <p class="leading-relaxed">“Magic is believing in yourself. If you can do that, you can make anything happen” - – Johann Wolfgang von Goethe.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                              <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="src/com/DSC_0130-01.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                  <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">Its An Rainy day 🌧️</h2>
+                                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">It was very cold, still took the photo</h1>
+                                  <p class="leading-relaxed">"Clouds come floating into my life, no longer to carry rain or usher storm, but to add color to my sunset sky." - Rabindranath Tagore</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                              <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="src/com/DSC_0152-01.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                  <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">The Spiti Valley⛰️</h2>
+                                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Heaven for Bike Rider and Nature lover</h1>
+                                  <p class="leading-relaxed">Spiti valley is famous for its natural beauty and cultural heritage. Tabo monastery is one of the most prominent attractions in Spiti. - Google</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                              <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="src/com/DSC_0288.jpg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                  <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">Tuffy🐕</h2>
+                                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">My First Pet Dog</h1>
+                                  <p class="leading-relaxed">I had to go to another city for higher education that's why I could not raise Tuffy, so my distant relative adopted Tuffy. Now I don't have Tuffy but I have memories of him, now I only see his photos in Facebook stories of my relative. </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                              <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="src/com/DSC_0484-01.jpeg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                  <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">Sunder Nagar Lake🏞️</h2>
+                                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">The Heart of my Town</h1>
+                                  <p class="leading-relaxed">This lake is in Main Sunder nagar region which is a place in District Mandi of Himachal Pradesh. Sunder Nagar was formerly a Princely state known as Suket. This lake was a BSL Project which brought Sundernagar to its present glory.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="lg:w-1/3 sm:w-1/2 p-4">
+                              <div class="flex relative">
+                                <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="src/img/photo_2022-04-30_17-31-53 (2).jpg">
+                                <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                                  <h2 class="tracking-widest text-sm title-font font-medium text-blue-500 mb-1">The Farewell</h2>
+                                  <h1 class="title-font text-lg font-medium text-gray-900 mb-3">My Class 12th Farewell outfit</h1>
+                                  <p class="leading-relaxed">"Every day I shall put my papers in order and every day I shall say farewell. And the real farewell, when it comes, will only be a small outward confirmation of what has been accomplished within me from day to day."</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </section>
+
+                        <!--Footer-->
+
+                        <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+
+                            <p class="leading-normal my-5">
+                                Rijul Sen <br />Made With
+                                <i class="fa fa-heart pulse"></i> by
+                                <a href="https://www.instagram.com/rijulsen/" target="_blank"><span
+                                        class="underline">me</span></a>
+                            </p>
+                            <span class="inline-flex">
+                                <a class="text-gray-500" href="https://www.facebook.com/profile.php?id=100084700564008"
+                                    target="_blank">
+                                    <svg class="w-6 h-6 text-blue-600 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                    </svg>
+                                </a>
+                                <a class="ml-4 text-gray-500" href="https://twitter.com/rijul_sen" target="_blank">
+                                    <svg class="w-6 h-6 text-blue-300 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24">
+                                        <path
+                                            d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                                    </svg>
+                                </a>
+                                <a class="ml-4 text-gray-500" href="https://www.instagram.com/rijulsen/"
+                                    target="_blank">
+                                    <img src="src/img/instagram-icon.svg" width="25" height="18" alt="" />
+                                </a>
+                                <a class="ml-4 text-gray-500" href="https://www.linkedin.com/in/rijul-sen-486364249/"
+                                    target="_blank">
+                                    <svg class="w-6 h-6 text-blue-500 fill-current" xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 448 512">
+                                        <path
+                                            d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z">
+                                        </path>
+                                    </svg>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.5.2/dist/flowbite.js"></script>
+    <script src="app.js"></script>
 </body>
+
 </html>
