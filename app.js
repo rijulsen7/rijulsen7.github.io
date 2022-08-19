@@ -16,8 +16,8 @@
 var typed = new Typed(".typing-text", {
     strings: ["Bug 🐛", "Student🧑", "Hustler  🚵", "", ""],
     loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
+    typeSpeed: 40,
+    backSpeed: 15,
     backDelay: 500,
 });
 // <!-- typed js effect ends -->
