@@ -14,7 +14,7 @@
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["Bug 🐛", "Student🧑‍🎓", "Hustler  🚵", "", ""],
+    strings: ["Bug 🐛", "Student🧑", "Hustler  🚵", "", ""],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
